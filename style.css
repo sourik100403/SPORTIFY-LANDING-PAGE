@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope', sans-serif;
+
+    
+}
+
+/* body{
+    width: 100vw;
+} */
+
+
+:root{
+    --main-width:1250px;
+    --cmargin: 30px;
+    --radius: 50%;
+    --nav-color:#000000;
+    --white-base: #ffffff;
+    --body-color-1:#983398;
+    --body-color-2:#2940ab;
+    --hover:#1ed760;
+    --padding:3%;
+}
+
+
+
+/* ----------CSS for Nav-------------- */
+
+nav{
+    display: flex;
+    width: 100vw;
+    background-color: var(--nav-color);
+    justify-content: space-around;
+}
+
+.container{
+    width: var(--main-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+    color: white;
+    height: 80px;
+    padding: 0 var(--padding);
+
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left p{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-left img{
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right ul li{
+    margin-right:var(--cmargin);
+    list-style: none;
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+}
+.nav-right ul li a:hover{
+    color: var(--hover);   
+}
+
+.nav-user-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-user-icon:hover{
+    cursor: pointer;
+}
+
+
+/* nav user icon paragraph */
+.profile-text{
+    font-weight: 500;
+    margin-right: 7px;
+    /* cursor: pointer; */
+}
+
+
+.nav-user-icon:hover{
+    color: var(--hover);  
+}
+
+/* ---nav user circle----- */
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--hover);
+    border-radius:var(--radius);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.v-line{
+    margin-right: var(--cmargin);
+    width: 1px;
+    height: 20px;
+    border-right: 1px solid white;
+}
+
+
+/* --------CSs of section first anf for first section--------- */
+/* 
+main{
+    display: flex;
+    width: 100%;
+    background-color: var(--body-color-1);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+} */
+
+.main-container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: var(--body-color-1);
+}
+
+.first-section{
+    width: var(--main-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88vh;
+    padding: var(--padding);
+    background-color: var(--body-color-1);
+    color: white;
+    /* flex-wrap: wrap; */
+}
+
+.left p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.left h1{
+    font-size: 55px;
+}
+
+.left h3{
+    font-size: 23px;
+    margin-top: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.left small{
+    font-size: 12px;
+}
+.left span{
+    font-size: 15px;
+}
+
+.left button{
+    display: block;
+    padding: 12px 45px;
+    border-radius: 50px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.left button:hover{
+    transform: scale(1.05);
+}
+
+.right img{
+    width: 400px;
+}
+
+
+
+
+/* --------second section----- */
+
+
+.second-section{
+    display: inline-flexbox;
+    width: 100vw;
+    background-color: var(--body-color-2);
+    /* align-self: flex-start; */
+    justify-content:center;
+}
+
+.second-section img{
+    width: 100%;
+}
+
+.second-section h1{
+    color: var(--hover);
+    font-size: 60px;
+}
+
+.second-section p{
+    color: var(--hover);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.some-text{
+    position: absolute;
+    /* width: 1200px; */
+    left: 23%;
+    display: 
+    none;
+
+}
+
+
+
+
+/* --------Css for footer--------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--nav-color);
+    width: 100vw;
+}
+
+.footer{
+    width: var(--main-width);
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    background-color: var(--nav-color);
+    padding: 80px 0;
+    color: white;
+
+    
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 20px 0;
+
+    
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.foot1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10px;
+}
+.foot1 p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.foot1 img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+.footer h2{
+    font-size: 15px;
+    color: #838688;
+}
+
+
+
+.foot5 i{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin-left: 30px;
+    background-color: #222326;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
